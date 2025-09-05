@@ -65,7 +65,10 @@
           />
           <span class="logo-txt text-light">Online Qur’an Classes</span>
         </a>
-        <button class="btn btn-sm btn-primary" onclick="window.location.href='https://wa.me/1234567890'">
+        <button
+          class="btn btn-sm btn-primary"
+          onclick="window.location.href='https://wa.me/1234567890'"
+        >
           <span class="me-1">
             <i class="fab fa-whatsapp"></i>
           </span>
@@ -90,8 +93,8 @@
                 Whether you are a beginner, a child, or an adult, our
                 personalized online Qur’an courses are designed to suit every
                 level. We focus on accurate recitation, Tajweed, memorization,
-                and understanding of the Qur’an with flexible timings to fit your
-                schedule.
+                and understanding of the Qur’an with flexible timings to fit
+                your schedule.
               </p>
               <p>
                 🌙 Start your journey today with one-to-one online Qur’an
@@ -99,7 +102,12 @@
               </p>
             </div>
             <div class="card-footer bg-white text-end">
-              <button class="btn btn-sm btn-primary" onclick="window.location.href='https://wa.me/1234567890'">contact us</button>
+              <button
+                class="btn btn-sm btn-primary"
+                onclick="window.location.href='https://wa.me/1234567890'"
+              >
+                contact us
+              </button>
             </div>
           </div>
         </div>
@@ -161,23 +169,19 @@
           class="col-md-6 d-md-flex d-none justify-content-center text-center"
         >
           <figure class="w-45">
-            <img
-              class="w-100"
-              src="./assets/fig1.png"
-              alt=""
-            />
+            <img class="w-100" src="./assets/fig1.png" alt="" />
           </figure>
         </div>
         <div class="col-md-6">
           <section id="courses" class="py-5">
             <div class="container">
               <h2 class="mb-2">Our Programs</h2>
-              
+
               <div class="accordion" id="coursesAccordion">
-                 <div class="accordion-item">
+                <div class="accordion-item">
                   <h2 class="accordion-header" id="headingHif">
                     <button
-                      class="accordion-button "
+                      class="accordion-button"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseHif"
@@ -194,13 +198,13 @@
                     data-bs-parent="#coursesAccordion"
                   >
                     <div class="accordion-body">
-                      Goals: <br> Learn basic Aqeedah (beliefs of a Muslim). Study
-                      the Five Pillars of Islam in detail. Know Seerah stories
-                      of Prophet Muhammad ﷺ. Memorize daily Duas and Adhkar.
-                      Practice Islamic manners (Adab) in daily life. <br>
-                      🌸 Through
-                      Darrusllam Islamic studies books. Twelve levels and it
-                      depends on the student level we choose the book.
+                      Goals: <br />
+                      Learn basic Aqeedah (beliefs of a Muslim). Study the Five
+                      Pillars of Islam in detail. Know Seerah stories of Prophet
+                      Muhammad ﷺ. Memorize daily Duas and Adhkar. Practice
+                      Islamic manners (Adab) in daily life. <br />
+                      🌸 Through Darrusllam Islamic studies books. Twelve levels
+                      and it depends on the student level we choose the book.
                     </div>
                   </div>
                 </div>
@@ -220,7 +224,7 @@
                   </h2>
                   <div
                     id="collapseNoorani"
-                    class="accordion-collapse collapse "
+                    class="accordion-collapse collapse"
                     aria-labelledby="headingNoorani"
                     data-bs-parent="#coursesAccordion"
                   >
@@ -231,8 +235,8 @@
                       📝 Phonics / Literacy <br />
                       Goals: <br />
                       Master letter-sound correspondence. Blend sounds to read
-                      new words. Improve spelling and word recognition. <br> 🌸 From
-                      Mushaf and Fathurrahman/ Noor Al bayan rule.
+                      new words. Improve spelling and word recognition. <br />
+                      🌸 From Mushaf and Fathurrahman/ Noor Al bayan rule.
                     </div>
                   </div>
                 </div>
@@ -262,7 +266,8 @@
                       Learn rules of Tajweed step by step (Madd, Ghunna…). Apply
                       Tajweed rules in daily recitation. Recite Qur’an fluently
                       without mistakes. recitation correction. Build confidence
-                      in independent reading. <br> 🌸 Simple tajweed books.
+                      in independent reading. <br />
+                      🌸 Simple tajweed books.
                     </div>
                   </div>
                 </div>
@@ -293,7 +298,6 @@
                     </div>
                   </div>
                 </div>
-               
               </div>
             </div>
           </section>
@@ -301,8 +305,14 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <footer class="bg-blue text-light text-center py-3">
-      <p class="mb-0">© 2023 Online Qur’an Classes. All rights reserved.</p>
+      <p class="mb-0">
+        © <span id="year"></span> Online Qur’an Classes. All rights reserved.
+      </p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
     </footer>
   </body>
 </html>
